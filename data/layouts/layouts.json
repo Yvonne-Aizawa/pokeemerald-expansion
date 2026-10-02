@@ -9328,11 +9328,32 @@
       "id": "LAYOUT_EVENT_TEST",
       "name": "EventTest_Layout",
       "width": 20,
-      "height": 20,
+      "height": 24,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_DewfordGym",
       "border_filepath": "data/layouts/EventTest/border.bin",
       "blockdata_filepath": "data/layouts/EventTest/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLDALE_TOWN_POKEMON_CENTER_1F_2",
+      "name": "OldaleTown_PokemonCenter_1F_2_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/OldaleTown_PokemonCenter_1F_2/border.bin",
+      "blockdata_filepath": "data/layouts/OldaleTown_PokemonCenter_1F_2/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_HOME",
+      "name": "home_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/home/border.bin",
+      "blockdata_filepath": "data/layouts/home/map.bin"
     }
   ]
 }

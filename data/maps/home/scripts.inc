@@ -1,38 +1,38 @@
-EventTest_MapScripts::
+home_MapScripts::
 	.byte 0
 
-EventTest_EventScript_GiveStarter::
+home_EventScript_GiveStarter::
 	lockall
 	setflag FLAG_SYS_POKEMON_GET
 	givemon SPECIES_FENNEKIN, 5
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
-	goto_if_eq EventTest_EventScript_MonInParty
+	goto_if_eq home_EventScript_MonInParty
 	compare VAR_RESULT, MON_GIVEN_TO_PC
-	goto_if_eq EventTest_EventScript_MonInPC
+	goto_if_eq home_EventScript_MonInPC
 	goto Common_EventScript_NoMoreRoomForPokemon
 	releaseall
 	end
 
-EventTest_EventScript_MonInParty::
+home_EventScript_MonInParty::
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox EventTest_Text_ReceivedMon, MSGBOX_DEFAULT
+	msgbox home_Text_ReceivedMon, MSGBOX_DEFAULT
 	waitfanfare
 	waitmessage
 	setvar VAR_TEMP_0, 1
 	releaseall
 	end
 
-EventTest_EventScript_MonInPC::
+home_EventScript_MonInPC::
 	playfanfare MUS_OBTAIN_ITEM
-	msgbox EventTest_Text_ReceivedMonPC, MSGBOX_DEFAULT
+	msgbox home_Text_ReceivedMonPC, MSGBOX_DEFAULT
 	waitfanfare
 	waitmessage
 	setvar VAR_TEMP_0, 1
 	releaseall
 	end
 
-EventTest_Text_ReceivedMon:
+home_Text_ReceivedMon:
 	.string "{PLAYER} received a FENNEKIN!$"
 
-EventTest_Text_ReceivedMonPC:
+home_Text_ReceivedMonPC:
 	.string "FENNEKIN was sent to someone's PC.$"
