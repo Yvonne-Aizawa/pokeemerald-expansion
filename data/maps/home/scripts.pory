@@ -5,7 +5,7 @@ home_MapScripts::
 home_EventScript_GiveStarter::
 	lockall
 	setflag FLAG_SYS_POKEMON_GET
-	givemon SPECIES_FENNEKIN, 5
+	givemon SPECIES_BIDOOF, 5
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq home_EventScript_MonInParty
 	compare VAR_RESULT, MON_GIVEN_TO_PC

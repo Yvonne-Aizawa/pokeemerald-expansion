@@ -13,7 +13,7 @@ home_EventScript_GiveStarter::
 # 7 "data/maps/home/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
 # 8 "data/maps/home/scripts.pory"
-	givemon SPECIES_FENNEKIN, 5
+	givemon SPECIES_BIDOOF, 5
 # 9 "data/maps/home/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 # 10 "data/maps/home/scripts.pory"
